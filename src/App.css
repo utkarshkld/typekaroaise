@@ -1,0 +1,427 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.main_div{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/2Np6gn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-block: 10px;
+  background-color: black;
+}
+
+header .site-logo {
+
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  font-size: 25px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 5px 20px;
+}
+
+.active_dash{
+  font-weight: bold;
+  text-decoration: underline;
+  color: red;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #161616;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: #AAAAAA;
+  height: 50px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  font-weight: 500;
+}
+
+.race_page{
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.stats{
+  width: 30vw;
+  height: 70vh;
+  background-color: rgba(255, 255, 255, 0.861);
+  border: 2px solid black;
+  padding: 20px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.type_race{
+  width: 50vw;
+  height: 70vh;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.861);
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.visual{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  height: 33%;
+  flex: 1;
+  overflow: hidden;
+  color: black;
+  padding: 20px;
+}
+
+.typearea{
+  height: 60%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speedmeter{
+  flex:0.5;
+
+}
+
+.text_content,.input_area{
+  margin: 10px;
+  width: 100%;
+  padding: 20px;
+  /* border: 2px solid black; */
+  border-radius: 20px;
+  font-size: 18px;
+  margin-top: 20px ;
+}
+
+input{
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+}
+
+.wronginput{
+  background-color: rgba(255, 0, 0, 0.416);
+}
+.rightinput{
+  background-color: rgba(0, 128, 0, 0.495);
+}
+
+.trans{
+  background-color: rgba(255, 255, 255, 0.108);
+}
+
+.carimg{
+  width: 150px;
+  /* height: 100px; */
+}
+
+.speedtext{
+  font-size: 40px;
+}
+
+.car{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.green{
+  color: green;
+}
+
+.completed{
+  position: absolute;
+  width: 40% ;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.637);
+  color: white;
+}
+
+.none{
+  display: none;
+}
+
+
+.timetab{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: 15px;
+}
+
+.start{
+  width: 100px;
+}
+.btn{
+  background-color: rgba(0, 0, 255, 0.426);
+  border-radius: 10px;
+}
+
+.difficulty,.time_duration{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.selectdifficulty,.selecttime{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 20px;
+}
+
+.selectbtn{
+  width: 100px;
+  height: 40px;
+}
+
+.settings{
+  width: 100%;
+  height: 50%;
+}
+
+.hiscore{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_content{
+  /* height: 40%; */
+  overflow-y: overlay;
+}
+
+.car{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* background-color: yellow; */
+}
+.yellow{
+  width: 100%;
+  height: 100%;
+}
+
+/* .you{
+  background-color: yellow;
+}
+
+.another{
+  background-color: red;
+} */
+
+.bars{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 25px;
+}
+.abs{
+  position: absolute;
+  left: 0px;
+}
+
+.compete_settings{
+  position: absolute;
+  width: 100vw;
+  height: 88vh;
+  background-color: rgba(0, 0, 0, 0.729);
+  color: white;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.adduser_btn{
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: white;
+  font-size: 30px;
+  background-color: rgba(4, 255, 0, 0.586);
+}
+/* 
+.lobby{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+.completed{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40vw;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.678);
+  border-radius: 20px;
+  color: white;
+  transition: 1s ease-in-out;
+  padding: 40px;
+}
+
+.completed{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.937);
+  z-index: 150;
+  border-radius: 18px;
+  color: white;
+  transition: 1s ease-in-out;
+  padding: 40px;
+}
+
+.none{
+  display: none;
+}
+
+.reset{
+  background-color: aquamarine;
+}
+
+.home_page{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 88vh;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.51);
+}
+
+.about_us{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top_text{
+  text-align: center;
+  color: white  ;
+}
+
+.name_div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  border: 4px solid black;
+  padding: 5px;
+  background-color: white;
+  margin: 0px 30px;
+}
+
+.name_div>img{
+  width: 200px;
+  height: 200px;
+}
+
+.green{
+  color:  green;
+}
+.red{
+  color:rgba(255, 0, 0, 0.597);
+}
+.yel{
+  color:rgba(179, 152, 46, 0.579);
+}
+
+
+.bg-green{
+  background-color: rgba(128, 255, 0, 0.627);
+}
+.bg-yellow{
+  background-color: rgba(179, 152, 46, 0.579);
+}
+.bg-red{
+  background-color: rgba(255, 0, 0, 0.597);
+}
+
+.text_content {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+.text_content::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.how_to_use{
+  color: white;
+  background-color: #161616be;
+  padding: 30px;
+  border-radius: 18px;
+  border: 2px solid white;
+}
+
+.how_to_use>h1,.how_to_use>h3{
+  padding: 2px;
+}
+
+.linkedin{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.linkedin:hover{
+  text-decoration: underline;
+  color: blue;
+}
